@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            float: left;
+            width: 33.33%;
+            padding: 60px;
+        }
+        div{
+            border: 2px solid green;
+            padding: 20px;
+        }
+        .clearfix{
+            overflow: auto;
+        }
+        .img2{
+            float: right;
+        }
+        .clearfix2::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+  <img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur est amet numquam quod sunt sint, neque et provident velit ab alias perferendis. Obcaecati provident beatae necessitatibus exercitationem ea, dolor voluptatem?
+
+</div>
+
+<div class="clearfix2">
+    <div class="box" style="background-color:#bbb">
+    <p>Some text inside the box.</p>
+    </div>
+    <div class="box" style="background-color:#ccc">
+    <p>Some text inside the box.</p>
+    </div>
+    <div class="box" style="background-color:#ddd">
+    <p>Some text inside the box.</p>
+    </div>
+  </div>
+</body>
+</html>

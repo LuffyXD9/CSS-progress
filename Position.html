@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.sticky{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            border: 3px double magenta;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+        div.static{
+            position: static;
+            border:2px solid orange;
+        }
+        div.relative{
+            position: relative;
+            left: 50px;
+            height: 300px;
+            max-width: 90%;
+            border: 2px solid green;
+        }
+        div.absolute{
+            position: absolute;
+            width: 200px;
+            right: 0;
+            top: 40%;
+            /* height: 150px; */
+            border: 2px dotted yellow;
+        }
+        div.fixed{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            max-width: 400px;
+            height: 100px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+        <div class="sticky">I am sticky!</div>
+        <div class="static">
+            This div element has position: static;
+        </div>
+        <div class="relative">
+            <h1>
+                This div element has position: relative;
+            </h1>
+            <div class="absolute">This div element has position: absolute;</div>
+        </div>
+            <div class="fixed">
+                <H3>
+                    This div element has position: fixed;
+                </H3>
+            </div>
+            <div style="height: 2000px;"></div>
+
+    //sudo class
+    //
+</body>
+</html>
