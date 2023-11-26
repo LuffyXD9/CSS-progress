@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            display: none;
+            border: 2px solid gray;
+            padding: 15px;
+        }
+        div:hover p{
+            display: block;
+        }
+        .first{
+            display: block;
+        }
+        .first::first-letter{
+            color: green;
+            font-size: xx-large;
+        }
+        .first::first-line{
+            color: red;
+            font-variant: small-caps;
+        }
+        ::selection{
+            color: gold;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hover over me
+        <p>Abarkaadabra!!</p>
+
+    </div>
+    <p class="first">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+    
+</body>
+</html>
