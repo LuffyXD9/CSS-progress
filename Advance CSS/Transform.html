@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .transform{
+            border: 2px solid green;
+            text-align: center;
+            width: 30%;
+            box-shadow: 2px 2px lightgreen;
+        }
+        .transform:hover{
+            transform: translate(50%,50%);
+        }
+        .rotate{
+            position: relative;
+            left: 50%;
+            margin-top: 50px;
+            width: 10%;
+            text-align: center;
+            height: auto;
+            padding: 20px;
+            border: 2px solid red;
+        }
+        .rotate:hover{
+            transform: rotate(90deg);
+        }
+        .scale{
+            position: relative;
+            padding: 20px;
+            border: 2px solid blue;
+            margin: 50px 400px;
+            width: 10%;
+            text-align: center;
+            transform: skewX(10deg);
+        }
+        .scale:hover{
+            transform: scale(2,3);
+            box-shadow: 2px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="transform">
+        this div is moved
+    </div>
+    <div class="rotate">
+        hover over me
+    </div>
+    <div class="scale">
+        scale
+    </div>
+</body>
+</html>
