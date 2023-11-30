@@ -26,17 +26,14 @@
             background-color: orangered;
             color: black;
         }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
         .column{
-            float: left;
-            width: 25%;
+            flex: 25%;
             padding: 15px;
         }
-        .row::after{
-            content: "";
-            display: table;
-            clear: both;
-        }
-
         body{
             background-color: aqua;
         }
@@ -44,21 +41,17 @@
             body{
                 background-color: aquamarine;
             }
-            .column{
-                width: 50%;
-            }
+           .column{
+            flex: 50%;
+           }
         }
         @media screen and (max-width:450px) {
             body{
                 background-color: green;
             }
-            .nsv a{
-                float: none;
-                width: 100%;
-            }
-            .column{
-                width: 100%;
-            }
+           .column{
+            flex: 100%;
+           }
         }
        
         
